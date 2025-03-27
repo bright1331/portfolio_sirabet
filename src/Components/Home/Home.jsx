@@ -1,6 +1,5 @@
 import React from 'react'
 import './Home.css'
-// import bright1 from '../../assets/bright1.jpg'
 import bb from '..//..//assets/bb.jpg'
 
 function Home() {
