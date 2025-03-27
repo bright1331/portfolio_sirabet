@@ -1,0 +1,137 @@
+.project{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 80px;
+    margin: 80px 170px;
+}
+.project-title{
+    position: relative;
+}
+.project-title h1{
+    padding: 0px 30px;
+    font-size: 50px;
+    font-weight: 600;
+}
+.project-format-project1{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+    
+}
+.project-format-project1 img{
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 90%; /* ปรับขนาดเต็มความกว้างของ parent */
+    max-width: 500px; /* จำกัดขนาดสูงสุด */
+    display: block; /* ทำให้เป็น block element */
+    margin: auto; /* จัดกึ่งกลางแนวนอน */
+}
+.project-format-project1 p{
+    font-size: 25px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #1576ff 50%,#0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-format-project2{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 20px;
+    padding: 20px;
+    border-radius: 10px;
+    border: 2px solid white;
+    transition: 0.4s;
+    cursor: pointer;
+}
+.project-format-project2 img{
+    box-sizing: border-box;
+    border-radius: 20px;
+    cursor: pointer;
+    width: 60%; /* ปรับขนาดเต็มความกว้างของ parent */
+    max-width: 500px; /* จำกัดขนาดสูงสุด */
+    display: block; /* ทำให้เป็น block element */
+    margin: auto; /* จัดกึ่งกลางแนวนอน */
+
+}
+.project-format-project2 p{
+    font-size: 25px;
+    font-weight: 800;
+    background: linear-gradient(270deg, #1576ff 50%,#0ef 100%);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.project-container{
+    display: grid;
+    grid-template-columns: 1fr 1fr ;
+    gap: 40px;
+    margin-bottom: 80px;
+    
+}
+.project-readmore{
+    display: flex;
+    gap: 20px;
+    align-items: center;
+    margin-top: 20px;
+}
+.project-format-project1:hover{
+    border: 2px solid #0ef;
+    background-image: linear-gradient(45deg, #3bd3ee, #090058); ;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+.project-format-project2:hover{
+    border: 2px solid #0ef;
+    background-image: linear-gradient(45deg, #3bd3ee, #090058); ;
+    transform: scale(1.05);
+    transition: 0.4s;
+}
+@media(max-width: 768px) {
+    /* ปรับ .project-container ให้แสดง 1 คอลัมน์เมื่อหน้าจอเล็ก */
+    .project-container {
+        grid-template-columns: 1fr; /* ใช้ 1 คอลัมน์เมื่อหน้าจอเล็ก */
+        gap: 20px; /* ลดระยะห่างระหว่างคอลัมน์ */
+        margin: 20px; /* ปรับมาร์จินให้เหมาะสม */
+    }
+
+    /* ปรับขนาดของ .project-format-project1 และ .project-format-project2 */
+    .project-format-project1, .project-format-project2 {
+        width: 100%; /* ให้โปรเจกต์กว้างเต็มหน้าจอ */
+        padding: 15px; /* ลดขนาด padding */
+    }
+
+    /* ปรับขนาดของภาพในโปรเจกต์ */
+    .project-format-project1 img, .project-format-project2 img {
+        width: 100%; /* ทำให้ภาพเต็มความกว้างของ parent */
+        max-width: 100%; /* จำกัดความกว้างสูงสุดให้เหมาะสม */
+        height: auto; /* ทำให้ภาพไม่ผิดเพี้ยนเมื่อย่อ */
+    }
+
+    /* ลดขนาดของข้อความใน .project-format-project1 และ .project-format-project2 */
+    .project-format-project1 p, .project-format-project2 p {
+        font-size: 18px; /* ลดขนาดตัวอักษรลง */
+    }
+
+    /* ปรับขนาดฟอนต์ของ .project-title h1 */
+    .project-title h1 {
+        font-size: 36px; /* ลดขนาดฟอนต์เมื่อหน้าจอเล็ก */
+        padding: 0 10px; /* ลด padding ให้พอดีกับหน้าจอ */
+    }
+
+    /* ปรับ .project-readmore ให้พอดีกับหน้าจอเล็ก */
+    .project-readmore {
+        flex-direction: column; /* เปลี่ยนแนวการจัดวางให้เป็นคอลัมน์ */
+        align-items: flex-start; /* จัดให้อยู่ทางซ้าย */
+    }
+}
