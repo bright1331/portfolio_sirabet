@@ -44,6 +44,22 @@
 .home-connect:hover{
     border: 2px solid white;
 }
+.home-transcript{
+    border: none;
+    color: white;
+    border-radius: 50px;
+    background: linear-gradient(270deg, #1576ff 50%, #0ef 100%);
+    font-size: 20px;
+    padding: 25px 75px;
+    margin-bottom: 50px;
+    cursor: pointer;
+    transition: 0.3s;
+}
+.home-transcript:hover{
+    transform: scale(1.1);
+    transition: 0.3s;
+    border-color: #1576ff ;
+}
 .home-resume{
     border: none;
     color: white;
@@ -102,5 +118,13 @@
     .home-connect{
         padding: 20px 30px;
         border-radius: 40px
+    }
+    .home-transcript{
+        padding: 20px 30px; /* ลดขนาดปุ่ม */
+        font-size: 20px;
+    }
+    .home-resume{
+        padding: 20px 30px; /* ลดขนาดปุ่ม */
+        font-size: 20px;
     }
 }
